@@ -1,0 +1,231 @@
+body {
+  background-image: white; 
+  background-size: cover;
+  background-position: center top;
+  background-color: black;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.boton {
+  background: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px 35px;
+  border: 2px solid white;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.boton:hover {
+  background: white;
+  color: black;
+}
+
+.boton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
+}
+
+.boton:hover::before {
+  left: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0; 
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1; 
+      transform: translateY(0);
+  }
+}
+@keyframes in {
+  from {
+      opacity: 0; 
+  }
+  to {
+      opacity: 1; 
+  }
+}
+@keyframes out {
+  from {
+      opacity: 1; 
+  }
+  to {
+      opacity: -1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes inUp {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes tittle {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+  @keyframes botonAnimation {
+    0%{
+      background: none;
+    }
+    50%{
+      background: #26a9ca;
+    }
+    100%{
+      background: none;
+    }
+  }
+  @keyframes tittleAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  20% { transform: translate(-2px, 2px) rotate(-1deg); }
+  40% { transform: translate(2px, -2px) rotate(1deg); }
+  60% { transform: translate(-2px, -2px) rotate(-1deg); }
+  80% { transform: translate(2px, 2px) rotate(1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Owsald";
+}
+.boton-postear {
+      background: white;
+      border: 2px solid black;
+      color: rgb(0, 0, 0);
+      padding: 15px 35px;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 10px;
+}
+.boton-postear:hover {
+      animation: botonAnimation 1s infinite ease-in-out forwards,shake 0.2s infinite linear;
+      display: inline-block;
+}
+
+.tittle{
+  display: inline-block; 
+  text-align: center;
+  animation: tittle 2s infinite ease-in-out;
+  mix-blend-mode: difference; 
+    color: white;
+}
+.fadeInUp{
+  opacity: 0;
+  animation: fadeInUp 2s ease-out forwards; 
+}
+.fadeInOut {
+  animation: fadeInOut 3s ease-out forwards;
+}
+
+.Theme {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-out forwards;
+}
+.in{
+  opacity: 0;
+  animation: in 3s ease-out forwards;
+}
+.out {
+  opacity: 0;
+  animation: out 1s ease-out forwards;
+}
+.inUp{
+  opacity: 0;
+  animation: inUp 2s ease-out forwards;
+}
+input {
+  position: absolute;
+  width: 510px;
+  height: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: none; 
+  overflow: none;
+  border: 2px solid black; 
+  border-radius: 10px; 
+  padding: 10px; 
+  outline: none; 
+  transition: 0.3s ease-in-out;
+}
+
+input:hover {
+  border-color: #1a829c; 
+}
+
+input:focus {
+  border-color: white; 
+  background-color: #333;
+}
+.stayLoggedLabel {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#contenedor {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 665px;
+}
+.post {
+  background: #e9ecef;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px; 
+}
