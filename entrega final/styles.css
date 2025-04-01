@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(2, 1, 19);
+    color: white;
+    text-align: center;
+}
+/*no supe como centrarlo asi q lo puse asi no mas xd perdon por eso*/
+.pokemon-card {
+    background: linear-gradient(145deg, #ffcc00, #ff9900);
+    border-radius: 10px;
+    border: 3px solid #b78600;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Pokémon', sans-serif;
+    transition: transform 0.2s ease-in-out;
+    color: #333;
+    position: absolute;
+    left: 780px;
+}
+
+.pokemon-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b78600;
+}
+
+.pokemon-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pokemon-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.pokemon-card p {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-card .pokemon-type {
+    display: inline-block;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+.pokemon-card .pokemon-region {
+    background-color: #ff9900;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #3d3d3d;
+}
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background-color: #1e90ff;
+    color: rgba(255, 255, 0, 0.712);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.button:hover {
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
+}
+.titulo-img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.historial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.historial-item {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 196, 0);
+    color: black;
+    padding: 10px 20px;
+    border: 3px solid #b78600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.historial-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
+}
+.historial-item img {
+    width: 80px;
+}
